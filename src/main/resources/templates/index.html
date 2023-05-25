@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1 th:text="'hello GetParameter'"></h1>
+    <a th:href="@{/test1?data1=100&data2=200&data3=300}">HttpServletRequest test1</a></br>
+    <a th:href="@{/test2?data1=100&data2=200&data3=300&data3=400}">test2</a></br>
+    <a th:href="@{/test3?data1=100&data2=200&data3=300&data3=400}">WebRequest test3</a></br>
+<!--    Rest API-->
+    <a th:href="@{/test4/10/20/30}">@PathVariable test4</a></br>
+    <a th:href="@{/test5?data1=100&data2=200&data3=300&data3=400}">@RequestParam test5</a></br>
+</body>
+</html>
